@@ -1,0 +1,30 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1z5AYEDOrDuElAU95kQfUw7aX3wH5ci6Ulaualm8DPKI/edit?usp=sharing -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bus Arrival App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+ <body>
+  <div id="cover">
+    <img src="bus.png" alt="" height="250px" />
+    <h1>Bus Arrival App</h1>
+    <p>To experience the app, please enter the number 18141 or visit <a href="https://sg-bus-arrivals.vercel.app/?id=18141">this link</a> to find your bus number</p>
+    <label for="busStopId">Bus Stop ID: </label>
+    
+    <input
+      type="text"
+      id="busStopId"
+      name="busStopId"
+      placeholder="Enter bus stop ID"
+    />
+    <button id="submit" onclick="getBusTiming()">Submit</button>
+  </div>
+
+  <div id="arrivalInfo"></div>
+  <script src="script.js"></script>
+  </body>
+</html>
